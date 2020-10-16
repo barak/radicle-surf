@@ -43,6 +43,6 @@ RUN set -eux; \
     rm /usr/local/cargo/.package-cache;
 
 VOLUME /cache
-ENV SCCACHE_DIR=/cache/sccache \
+ENV SCCACHE_DIR=/cache/sccache2 \
     RUSTC_WRAPPER=sccache \
     CARGO_HOME=/cache/cargo
