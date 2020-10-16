@@ -2,4 +2,4 @@
 set -eou pipefail
 
 echo '--- Tests'
-SCCACHE_ERROR_LOG=/tmp/sccache.log GIT_FIXTURES=1 cargo test --verbose --all --features serialize
+env -u RUSTC_WRAPPER SCCACHE_ERROR_LOG=/tmp/sccache.log GIT_FIXTURES=1 cargo test --verbose --all --features serialize
