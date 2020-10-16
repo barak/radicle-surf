@@ -9,3 +9,5 @@ steps:
   agents:
     production: "true"
     platform: "linux"
+  artifact_paths:
+    - "/tmp/sccache.log"
